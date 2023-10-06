@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/html_96_Petro-Gunko/assets/favicon-f4da48f5.svg">
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <title>Vyshyvanka Vibes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
+  
+
+  <script type="module" crossorigin src="/html_96_Petro-Gunko/assets/index-3a5eb738.js"></script>
+  <link rel="stylesheet" href="/html_96_Petro-Gunko/assets/index-4414e803.css">
+</head>
+
+<body>
+  <!-- Eduard Korobko -->
+  <header class="header">
+  <div class="container container-header">
+    <div class="header-div-one">
+      <nav class="nav">
+        <a class="logo" href="../index.html">
+          <img src="data:image/png;base64,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" alt="Logo" width="44" />
+        </a>
+        <ul class="list-link-nav">
+          <li><a class="link-nav" href="#about-us">about us</a></li>
+          <li><a class="link-nav" href="#our-collection">our collection</a></li>
+          <li><a class="link-nav" href="#customer-order">customer order</a></li>
+          <li><a class="link-nav" href="#testimonials-title">testimonials</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-div-two">
+      <address class="header-address">
+        <ul class="header-address-list">
+          <li class="header-address-list-item">
+            <a class="address-link" href="tel:+380684439426"
+              >+380 (68) 443-94-26</a
+            >
+          </li>
+        </ul>
+      </address>
+
+      <ul class="header-social-list">
+        <li class="header-social-list-item">
+          <a href="https://www.facebook.com/goITclub/" class="social-link">
+            <svg class="social-icon" width="28" height="28">
+              <use href="/html_96_Petro-Gunko/assets/icons-36e038cd.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-list-item">
+          <a href="https://www.instagram.com/goitclub/" class="social-link">
+            <svg class="social-icon" width="28" height="28">
+              <use href="/html_96_Petro-Gunko/assets/icons-36e038cd.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-list-item">
+          <a href="https://www.youtube.com/c/GoIT" class="social-link">
+            <svg class="social-icon" width="28" height="28">
+              <use href="/html_96_Petro-Gunko/assets/icons-36e038cd.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <button class="open-mobile-menu-btn" type="button">
+        <svg
+          class="open-mobile-menu-icon"
+          width="36"
+          height="24"
+          aria-label="mobile-menu-icon"
+        >
+          <use href="/html_96_Petro-Gunko/assets/icons-36e038cd.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
+
+    <!-- mobail menu -->
+
+    <div class="mobile-menu">
+      <div class="container-mob-menu">
+        <div class="container-top-mobail-menu">
+          <address class="contacts-mobile-menu">
+            <a class="link-contacts-mobile" href="tel:+110001111111"
+              >+380 (68) 443-94-26</a
+            >
+          </address>
+
+          <button class="btn-mobaile-close" type="button">
+            <svg class="img-btn-mobaile" width="36" height="36">
+              <use href="/html_96_Petro-Gunko/assets/icons-36e038cd.svg#icon-x"></use>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="list-main-mobile-menu">
+          <li class="item-list-mobile-menu">
+            <a class="link-mobile-menu current" href="">About us</a>
+          </li>
+          <li class="item-list-mobile-menu">
+            <a class="link-mobile-menu" href="">Our collection</a>
+          </li>
+          <li class="item-list-mobile-menu">
+            <a class="link-mobile-menu" href="">CUSTOMER ORDER</a>
+          </li>
+          <li class="item-list-mobile-menu">
+            <a class="link-mobile-menu" href="">TEstimonials</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Olena Yatsyniuk -->
+  <section class="hero-section">
+  <div class="hero-container container">
+    <div class="hero-wrapper">
+      <div class="hero-wrapper-heading-and-btn">
+        <div class="hero-wrapper-heading">
+          <h1 class="hero-heading">
+            Reviving the traditional
+            <span class="hero-heading-span">Ukrainian</span> artistry in every
+            stitch.
+          </h1>
+        </div>
+        <div class="hero-wrapper-btn">
+          <button class="hero-btn" onclick="window.location.href = '#customer-order'">
+            Order<svg class="hero-icon-btn" width="26" height="10" aria-label="icon for order button">
+              <use href="/html_96_Petro-Gunko/assets/sprite-icons-a7f499cb.svg#icon-arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-box-image">
+        <img class="hero-img" srcset="/html_96_Petro-Gunko/assets/hero-grey-shirt-mob-1885ac30.jpg 335w, /html_96_Petro-Gunko/assets/hero-grey-shirt-mob@2x-71d08907.jpg 670w, /html_96_Petro-Gunko/assets/hero-grey-shirt-tablet-036a0172.jpg 413w, /html_96_Petro-Gunko/assets/hero-grey-shirt-tablet@2x-8a6a51e2.jpg 826w, /html_96_Petro-Gunko/assets/hero-grey-shirt-desk1280-db65020d.jpg 392w, /html_96_Petro-Gunko/assets/hero-grey-shirt-desk1280@2x-f0086ba8.jpg 784w" sizes="(min-width: 1280px) 392px, (min-width: 768px) 413px,
+        (min-width: 375px) 335px" src="./img/hero/grey-shirt-mob-min.jpg" alt="grey shirt" />
+      </div>
+    </div>
+    <div class="hero-wrapper-side-img">
+      <div class="hero-handmade-sign">
+        <div class="hero-container-for-icon">
+          <svg class="hero-icon" width="52" height="51" aria-label="icon for hanmade sign">
+            <use href="/html_96_Petro-Gunko/assets/sprite-icons-a7f499cb.svg#icon-yellow-star"></use>
+          </svg>
+        </div>
+        <p class="hero-paragraph">all embroidery is made by hand</p>
+      </div>
+      <div class="hero-box-group-img">
+        <img srcset="/html_96_Petro-Gunko/assets/hero-group-img-13997c8b.png 139w, /html_96_Petro-Gunko/assets/hero-group-img@2x-55ed2b7c.png 278w" sizes="(max-width: 767px) 139px" src="/html_96_Petro-Gunko/assets/hero-group-img-13997c8b.png" alt="grey shirt" />
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Oleksandr Mykolenko -->
+  <!----------- About Us-------------->
+
+<section class="about-us-section container">
+  <div class="about-us-container">
+    <div class="about-us-descr">
+      <h2 class="about-us" id="about-us">About Us</h2>
+      <ul class="about-us-list">
+        <li class="about-us-item">
+          <p class="about-us-text">
+            The store "Vyshyvanka Vibes" is a place where traditional Ukrainian
+            vyshyvanka comes to life with new zest and style. Our store offers a
+            wide selection of high-quality and authentic embroidery, which
+            combines the elegance of traditional needlework and modern design.
+          </p>
+        </li>
+        <li class="about-us-item">
+          <p class="about-us-text">
+            In "Vyshyvanka Vibes" you will find various models of embroidery,
+            from classic to modern, corresponding to the latest fashion trends.
+            Our embroidery is made using natural fabrics and is embroidered by
+            highly qualified craftsmen who convey the beauty of Ukrainian
+            culture in every detail.We believe that vyshyvanka is not just
+            clothing, but a symbol of national pride, the heritage of our
+            ancestors and a way of expressing one's individuality. Each
+            embroidery from "Vyshyvanka Vibes" has its own unique history and
+            symbolism, which gives it a special meaning.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="about-us-container-img">
+      <img
+        class="about-us-img"
+        src="/html_96_Petro-Gunko/assets/about-us-girl-and-boy-mobile-d96930c7.jpg"
+        srcset="/html_96_Petro-Gunko/assets/about-us-girl-and-boy-mobile-d96930c7.jpg 335w, /html_96_Petro-Gunko/assets/about-us-girl-and-boy-mobile@2x-b5a6a000.jpg 670w, /html_96_Petro-Gunko/assets/about-us-girl-and-boy-tablet-a39d45bb.jpg 704w, /html_96_Petro-Gunko/assets/about-us-girl-and-boy-tablet@2x-03914ca7.jpg 1408w, /html_96_Petro-Gunko/assets/about-us-girl-and-boy-desctop-d3482f2c.jpg 594w, /html_96_Petro-Gunko/assets/about-us-girl-and-boy-desctop@2x-96270265.jpg 1188w, /html_96_Petro-Gunko/assets/about-us-girl-and-boy-desctop-1440-35ac70fc.jpg 709w, /html_96_Petro-Gunko/assets/about-us-girl-and-boy-desctop-1440@2x-708d15c2.jpg 1418w"
+        sizes="(min-width: 1440px) 709px, (min-width: 1280px) 594px, (min-width: 768px) 704px, 
+      (max-width: 767px) 335px"
+        alt="Vyshyvanka girl and boy"
+      />
+    </div>
+  </div>
+</section>
+
+<!-----------END About US-------------->
+
+  <!-- Oleksandr Puzankov -->
+  <!-- OUR-COLLECTION -->
+<section class="our-collection">
+  <div class="container container-ornament">
+    <h2 class="our-collection-section-title" id="our-collection">
+      Our collection
+    </h2>
+    <ul class="our-collection-list">
+      <li class="our-collection-list-item">
+        <img
+          class="our-collection-img"
+          srcset="/html_96_Petro-Gunko/assets/poltava-women-blouse-min-cd9880fc.jpg 347w, /html_96_Petro-Gunko/assets/poltava-women-blouse@2x-min-633eb870.jpg 694w, /html_96_Petro-Gunko/assets/poltava-women-blouse-tab-min-00a2fe81.jpg 342w, /html_96_Petro-Gunko/assets/poltava-women-blouse-tab@2x-min-8fa23982.jpg 684w, /html_96_Petro-Gunko/assets/poltava-women-blouse-mob-min-e376dcd1.jpg 335w, /html_96_Petro-Gunko/assets/poltava-women-blouse-mob@2x-min-84c416a6.jpg 670w"
+          sizes="(min-width: 1280px) 347px, (min-width: 768px) 342px, (min-width: 375px) 335px"
+          src="/html_96_Petro-Gunko/assets/poltava-women-blouse-min-cd9880fc.jpg"
+          alt="August Poltava women's blousering"
+        />
+        <div class="our-collection-list-container">
+          <h3 class="our-collection-list-title">
+            AUGUST POLTAVA WOMEN'S BLOUSERING
+          </h3>
+          <p class="our-collection-list-price">3300 UAH</p>
+        </div>
+      </li>
+      <li class="our-collection-list-item">
+        <img
+          class="our-collection-img"
+          srcset="/html_96_Petro-Gunko/assets/women-blouse-gorgany-min-ca71bdeb.jpg 347w, /html_96_Petro-Gunko/assets/women-blouse-gorgany@2x-min-444c4daa.jpg 694w, /html_96_Petro-Gunko/assets/women-blouse-gorgany-tab-min-7798793d.jpg 342w, /html_96_Petro-Gunko/assets/women-blouse-gorgany-tab@2x-min-85a0deed.jpg 684w, /html_96_Petro-Gunko/assets/women-blouse-gorgany-mob-min-1b3af3f3.jpg 335w, /html_96_Petro-Gunko/assets/women-blouse-gorgany-mob@2x-min-7b9f571d.jpg 670w"
+          sizes="(min-width: 1280px) 347px, (min-width: 768px) 342px, (min-width: 375px) 335px"
+          src="/html_96_Petro-Gunko/assets/women-blouse-gorgany-min-ca71bdeb.jpg"
+          alt="Women's blouse Gorgany"
+        />
+        <div class="our-collection-list-container">
+          <h3 class="our-collection-list-title">WOMEN'S BLOUSE GORGANY</h3>
+          <p class="our-collection-list-price">3350 UAH</p>
+        </div>
+      </li>
+      <li class="our-collection-list-item">
+        <img
+          class="our-collection-img"
+          srcset="/html_96_Petro-Gunko/assets/women-blouse-crimea-min-65b5d5b3.jpg 347w, /html_96_Petro-Gunko/assets/women-blouse-crimea@2x-min-c027f05a.jpg 694w, /html_96_Petro-Gunko/assets/women-blouse-crimea-tab-min-282d459d.jpg 342w, /html_96_Petro-Gunko/assets/women-blouse-crimea-tab@2x-min-d85ce5ad.jpg 684w, /html_96_Petro-Gunko/assets/women-blouse-crimea-mob-min-53e3feea.jpg 335w, /html_96_Petro-Gunko/assets/women-blouse-crimea-mob@2x-min-cfbaced6.jpg 670w"
+          sizes="(min-width: 1280px) 347px, (min-width: 768px) 342px, (min-width: 375px) 335px"
+          src="/html_96_Petro-Gunko/assets/women-blouse-crimea-min-65b5d5b3.jpg"
+          alt="Women's blouse Crimea"
+        />
+        <div class="our-collection-list-container">
+          <h3 class="our-collection-list-title">WOMEN'S BLOUSE CRIMEA</h3>
+          <p class="our-collection-list-price">3300 UAH</p>
+        </div>
+      </li>
+      <li class="our-collection-list-item">
+        <img
+          class="our-collection-img"
+          srcset="/html_96_Petro-Gunko/assets/men-shirt-verkhovina-min-4e52f182.jpg 347w, /html_96_Petro-Gunko/assets/men-shirt-verkhovina@2x-min-2da8fa42.jpg 694w, /html_96_Petro-Gunko/assets/men-shirt-verkhovina-tab-min-e46f177c.jpg 342w, /html_96_Petro-Gunko/assets/men-shirt-verkhovina-tab@2x-min-19677d24.jpg 684w, /html_96_Petro-Gunko/assets/men-shirt-verkhovina-mob-min-eba58f00.jpg 335w, /html_96_Petro-Gunko/assets/men-shirt-verkhovina-mob@2x-min-a578f464.jpg 670w"
+          sizes="(min-width: 1280px) 347px, (min-width: 768px) 342px, (min-width: 375px) 335px"
+          src="/html_96_Petro-Gunko/assets/men-shirt-verkhovina-min-4e52f182.jpg"
+          alt="Men's shirt Verkhovina"
+        />
+        <div class="our-collection-list-container">
+          <h3 class="our-collection-list-title">MEN'S SHIRT YASEN</h3>
+          <p class="our-collection-list-price">1700 UAH</p>
+        </div>
+      </li>
+      <li class="our-collection-list-item">
+        <img
+          class="our-collection-img"
+          srcset="/html_96_Petro-Gunko/assets/mountain-men-shirt-min-73016b92.jpg 347w, /html_96_Petro-Gunko/assets/mountain-men-shirt@2x-min-min-6a256a2e.jpg 694w, /html_96_Petro-Gunko/assets/mountain-men-shirt-tab-min-f48eb644.jpg 342w, /html_96_Petro-Gunko/assets/mountain-men-shirt-tab@2x-min-81b60995.jpg 684w, /html_96_Petro-Gunko/assets/mountain-men-shirt-mob-min-d082600f.jpg 335w, /html_96_Petro-Gunko/assets/mountain-men-shirt-mob@2x-min-123f7ace.jpg 670w"
+          sizes="(min-width: 1280px) 347px, (min-width: 768px) 342px, (min-width: 375px) 335px"
+          src="/html_96_Petro-Gunko/assets/mountain-men-shirt-min-73016b92.jpg"
+          alt="Mountain men's shirt"
+        />
+        <div class="our-collection-list-container">
+          <h3 class="our-collection-list-title">MOUNTAIN MEN'S SHIRT</h3>
+          <p class="our-collection-list-price">4000 UAH</p>
+        </div>
+      </li>
+      <li class="our-collection-list-item">
+        <img
+          class="our-collection-img"
+          srcset="/html_96_Petro-Gunko/assets/men-shirt-yasen-min-c69b848e.jpg 347w, /html_96_Petro-Gunko/assets/men-shirt-yasen@2x-min-b6fca9ea.jpg 694w, /html_96_Petro-Gunko/assets/men-shirt-yasen-tab-min-d6866e01.jpg 342w, /html_96_Petro-Gunko/assets/men-shirt-yasen-tab@2x-min-38d65908.jpg 684w, /html_96_Petro-Gunko/assets/men-shirt-yasen-mob-min-aec8e772.jpg 335w, /html_96_Petro-Gunko/assets/men-shirt-yasen-mob@2x-min-81a57d56.jpg 670w"
+          sizes="(min-width: 1280px) 347px, (min-width: 768px) 342px, (min-width: 375px) 335px"
+          src="/html_96_Petro-Gunko/assets/men-shirt-yasen-min-c69b848e.jpg"
+          alt="Men's shirt Yasen"
+        />
+        <div class="our-collection-list-container">
+          <h3 class="our-collection-list-title">MEN'S SHIRT VERKHOVINA</h3>
+          <p class="our-collection-list-price">3100 UAH</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+  <!-- Stanislav Yaroschuk -->
+  <section class="your-order">
+  <div class="container">
+    <div class="your-order-bg"></div>
+
+    <div class="yorder-container">
+      <div class="yorder-titform-wrap">
+        <h2 class="yorder-title" id="customer-order">
+          <span class="yorder-title-accent">Your order </span> is our priority:
+          Personalized approach and quality of service
+        </h2>
+        <form class="yorder-form">
+          <div class="yorger-wrap">
+            <div class="yorger-input">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="name-input"
+                placeholder="Enter your full name"
+              />
+            </div>
+          </div>
+
+          <div class="yorger-wrap">
+            <div class="yorger-input">
+              <input
+                type="text"
+                name="user-email"
+                id="user-email"
+                class="name-input"
+                placeholder="Enter your email"
+              />
+            </div>
+          </div>
+          <div class="comment-wrap">
+            <textarea
+              class="comment-input"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Comments"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-submint">
+            Send<svg
+              class="yorder-icon-btn"
+              width="26"
+              height="10"
+              aria-label="icon for order button"
+            >
+              <use href="/html_96_Petro-Gunko/assets/sprite-icons-a7f499cb.svg#icon-arrow-btn"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+      <div class="yorder-img">
+        <picture>
+          <source
+            srcset="/html_96_Petro-Gunko/assets/yorder-img-desk-min-cc69d5e5.jpg 1x, /html_96_Petro-Gunko/assets/yorder-img-desk@2-min-2ed6178e.jpg 2x"
+            media="(min-width:1440px)"
+          />
+          <source
+            srcset="/html_96_Petro-Gunko/assets/yorder-img-desk-min-cc69d5e5.jpg 1x, /html_96_Petro-Gunko/assets/yorder-img-desk@2-min-2ed6178e.jpg 2x"
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="/html_96_Petro-Gunko/assets/yorder-img-tab-min-3fb59546.jpg 1x, /html_96_Petro-Gunko/assets/yorder-img-tab@2-min-edaf0fa4.jpg 2x"
+            media="(min-width:768px)"
+          />
+
+          <img
+            src="/html_96_Petro-Gunko/assets/yorder-img-tab-min-3fb59546.jpg"
+            alt="colored embroidery on blouses and sleeveless vests"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Anastasia Romanyuk -->
+  <section class="testimonials">
+  <div class="testimonials-container container">
+    <h2 class="testimonials-title" id="testimonials-title">Testimonials</h2>
+    <ul class="all-testimonials-list list">
+      <li class="testimonial-1">
+        <div class="testimonial-list-img">
+          <img
+            class="testimonial-img"
+            srcset="/html_96_Petro-Gunko/assets/Maria@2x-7030b938.png 2x"
+            src="/html_96_Petro-Gunko/assets/Maria@1x-06098244.png"
+            alt="Maria-Tkachuk-photo"
+            width="64"
+          />
+        </div>
+        <div class="testimonial-name-description">
+          <h3 class="testimonial-name">Maria Tkachuk</h3>
+          <p class="testimonial-description">
+            I was pleasantly surprised by the variety of embroidery offered by
+            Vyshyvanka Vibes. They have models for every taste - from classic to
+            modern. I bought an embroidered dress to celebrate a special
+            occasion and received impeccable service and refinement in every
+            detail.
+          </p>
+        </div>
+      </li>
+      <li class="testimonial-2">
+        <div class="testimonial-list-img">
+          <img
+            class="testimonial-img"
+            srcset="/html_96_Petro-Gunko/assets/Sergey@2x-44a071f6.png 2x"
+            src="/html_96_Petro-Gunko/assets/Sergey@1x-dad2c4cd.png"
+            alt="Sergey-Rybachok-photo"
+            width="64"
+          />
+        </div>
+        <div class="testimonial-name-description">
+          <h3 class="testimonial-name">Sergey Rybachok</h3>
+          <p class="testimonial-description">
+            Vyshyvanka Vibes exceeds all my expectations! Their vyshyvanka are
+            simply masterpieces! I fell in love with the quality of the
+            materials and the skill of the artisans behind each product. This is
+            my favorite embroidery shop where I always find something special
+            and unique.
+          </p>
+        </div>
+      </li>
+      <li class="testimonial-3">
+        <div class="testimonial-list-img">
+          <img
+            class="testimonial-img"
+            srcset="/html_96_Petro-Gunko/assets/Natalia@2x-694e42a8.png 2x"
+            src="/html_96_Petro-Gunko/assets/Natalia@1x-1cb6e455.png"
+            alt="Natalia-Chatuk-photo"
+            width="64"
+          />
+        </div>
+        <div class="testimonial-name-description">
+          <h3 class="testimonial-name">Natalia Chatuk</h3>
+          <p class="testimonial-description">
+            Vyshyvanka Vibes is a real find for everyone who appreciates
+            Ukrainian culture. Their embroidery reflects the spirit and
+            traditions of our people. I not only buy embroidered shirts for
+            myself, but also give them to my friends abroad as a symbol of our
+            beauty and national pride.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+  <!-- Oleksandr Sokolovskyi -->
+  <footer class="footer">
+  <div class="container footer-container-main">
+    <ul class="footer-list">
+      <li class="footer-list-item">
+        <a class="footer-link" href="#about-us">About us</a>
+      </li>
+      <li class="footer-list-item">
+        <a class="footer-link" href="#our-collection-section-title"
+          >Our collection</a
+        >
+      </li>
+      <li class="footer-list-item">
+        <a class="footer-link" href="#your-order">CUSTOMER ORDER</a>
+      </li>
+      <li class="footer-list-item">
+        <a class="footer-link" href="#testimonals">Testimonials</a>
+      </li>
+    </ul>
+    <p class="footer-text">
+      A touch of <span class="footer-text-yellow">Ukrainian</span> culture in
+      every embroidery
+    </p>
+  </div>
+</footer>
+
+
+  
+</body>
+
+</html>
